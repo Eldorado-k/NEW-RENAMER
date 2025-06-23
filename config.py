@@ -14,9 +14,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "25198711")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "2a99a1375e26295626c04b4606f72752")  # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7433809622:AAGocOZUr6elPImHzcCOBpCFZaF5hj3HdCE")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "24817837")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")  # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8093813786:AAEkFjpenAuQSma7wN59puZ1AiMLucpyIBo")  # ⚠️ Required
     
     # premium 4g renaming client
     STRING_API_ID = os.environ.get("STRING_API_ID", "")
@@ -24,14 +24,14 @@ class Config(object):
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
     # database config
-    DB_URL = environ.get("DB_URL", "mongodb+srv://Aniflix:Lipun123@aniflix.q2wina5.mongodb.net/?retryWrites=true&w=majority&appName=Aniflix")
-    DB_NAME = environ.get("DB_NAME", "Aniflix")  # ⚠️ Required
+    DB_URL = environ.get("DB_URL", "mongodb+srv://Ethan:Ethan123@telegrambots.lva9j.mongodb.net/?retryWrites=true&w=majority&appName=TELEGRAMBOTS")
+    DB_NAME = environ.get("DB_NAME", "TELEGRAMBOTS")  # ⚠️ Required
 
     # other configs
     BOT_UPTIME = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9c910cbc74144b3b2efce.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '1740287480').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]  # ⚠️ Required
     
     FORCE_SUB = os.environ.get("FORCE_SUB", "aniflixClou") # ⚠️ Required Username without @
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002219568827"))  # ⚠️ Required
