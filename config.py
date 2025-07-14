@@ -14,8 +14,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "24817837")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "acd9f0cc6beb08ce59383cf250052686")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "25926022")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "30db27d9e56d854fb5e943723268db32")  # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8093813786:AAEkFjpenAuQSma7wN59puZ1AiMLucpyIBo")  # ⚠️ Required
     
     # premium 4g renaming client
@@ -31,10 +31,10 @@ class Config(object):
     BOT_UPTIME = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/9c910cbc74144b3b2efce.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '8140299716').split()]  # ⚠️ Required
     
     FORCE_SUB = os.environ.get("FORCE_SUB", "aniflixClou") # ⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002219568827"))  # ⚠️ Required
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002698474966"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '105'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
         "BANNED_USERS", "1234567890").split())
